@@ -7,9 +7,9 @@ import Router from "next/router";
 import PageChange from "components/PageChange/PageChange.js";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import "styles/tailwind.css";
+import "styles/globals.css";
 
-Router.events.on("routeChangeStart", (url) => {
+/*Router.events.on("routeChangeStart", (url) => {
   console.log(`Loading: ${url}`);
   document.body.classList.add("body-page-transition");
   ReactDOM.render(
@@ -24,7 +24,7 @@ Router.events.on("routeChangeComplete", () => {
 Router.events.on("routeChangeError", () => {
   ReactDOM.unmountComponentAtNode(document.getElementById("page-transition"));
   document.body.classList.remove("body-page-transition");
-});
+});*/
 
 export default class MyApp extends App {
   componentDidMount() {
@@ -71,7 +71,6 @@ export default class MyApp extends App {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <title>Notus NextJS by Creative Tim</title>
-          <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
         </Head>
         <Layout>
           <Component {...pageProps} />

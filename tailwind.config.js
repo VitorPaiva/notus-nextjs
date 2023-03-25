@@ -1,4 +1,5 @@
 const plugin = require("tailwindcss/plugin");
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
@@ -8,6 +9,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: {
+          ...colors.slate,
+          DEFAULT: colors.slate[700]
+        }
+      },
       minHeight: {
         "screen-75": "75vh",
       },

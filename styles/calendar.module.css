@@ -1,0 +1,16 @@
+.container {
+  max-width: 100%;
+}
+
+.toastui-calendar-section-detail .toastui-calendar-detail-item:nth-child(2),
+.toastui-calendar-section-detail .toastui-calendar-detail-item:nth-child(3) {
+    display: none !important;
+}
+
+div.toastui-calendar-panel:not(.toastui-calendar-time) {
+  overflow-y: none !important;
+}
+
+.toastui-calendar-panel div {
+
+}

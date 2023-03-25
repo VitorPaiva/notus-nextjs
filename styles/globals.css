@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.delay-300ms{
+    animation-delay: 500ms;
+}
+.duration-300ms{
+    animation-duration: 300ms;
+}
+
+.container {
+    max-width: 100%;
+  }
+  
+  .toastui-calendar-section-detail .toastui-calendar-detail-item:nth-child(2),
+  .toastui-calendar-section-detail .toastui-calendar-detail-item:nth-child(3) {
+      display: none !important;
+  }
+
+  .toastui-calendar-panel:not(.toastui-calendar-time) {
+    overflow-y: hidden !important;
+  }
+
+  .toastui-calendar-panel:not(.toastui-calendar-time) div {
+    border: none !important;
+  }
+
+  .toastui-calendar-panel div:not(.toastui-calendar-event-time) {
+    border-color: rgb(51 65 85) !important;
+  }
+  .toastui-calendar-panel {
+    border-color: rgb(51 65 85) !important;
+  }
